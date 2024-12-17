@@ -168,7 +168,7 @@ def main() -> int:
     # =============
     LOG_CLI.info("setting up Linpack")
 
-    linpack_tgz = os.path.join(binary_cache, "linpack.tgz")
+    linpack_tgz = os.path.join(binary_cache, "onemkl.sh")
 
     if dl_file(urls["linpack"]["url"], linpack_tgz) != 0:
         return 1
